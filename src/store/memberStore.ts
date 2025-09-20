@@ -46,6 +46,6 @@ export const useMemberStore = create<MemberStore>((set, get) => ({
 
   importAllMembers: () => {
     // manual import JSON
-    set({ members: mpsData as Member[] });
+    set({ members: mpsData as unknown as Member[] });
   }
 }));
